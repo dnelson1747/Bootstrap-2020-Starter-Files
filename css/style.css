@@ -103,6 +103,11 @@ body {
 
 .fixed-background {
   overflow: hidden; /*-- Correction for iOS --*/
+  padding: 10rem 0;
+}
+.fixed {
+  background-image: url('../img/matrix.jpg');
+  position: fixed;
 }
 
 
