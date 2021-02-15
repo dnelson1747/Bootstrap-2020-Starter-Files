@@ -58,7 +58,7 @@
 					<div class="carousel-caption">
 						<div class="container">
 							<div class="row justify-content-center">
-								<div class="col-8 bg-custom d-none d-lg-block py-3 px-0">
+								<div class="col-8 bg-custom d-none d-md-block py-3 px-0">
 									<h1>Bootstrap</h1>
 									<div class="border-top border-primary w-50 mx-auto my-3"></div>
 									<h3 class="pb-3">Complete Website</h3>
@@ -158,6 +158,18 @@
 
 	<a class="navbar bg-primary sticky-top emoji" href="#emoji" role="button" data-toggle="collapse"><i class="fas fa-plug"></i></a>
 
+	<!-- #emoji>.container>.row>.col-sm-6.col-md-3*4>img.w-100 -->	
+	<div id="emoji">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 col-md-3"><img src="img/emoji/panda.gif" alt="" class="w-100"></div>
+				<div class="col-sm-6 col-md-3"><img src="img/emoji/poo.gif" alt="" class="w-100"></div>
+				<div class="col-sm-6 col-md-3"><img src="img/emoji/chicken.gif" alt="" class="w-100"></div>
+				<div class="col-sm-6 col-md-3"><img src="img/emoji/unicorn.gif" alt="" class="w-100"></div>
+			</div>
+		</div>
+	</div>
+
 	<!-- Modal Popup -->
 <div class="modal fade" id="modal1">
 	<div class="modal-dialog"><img src="img/emoji/panda.gif" alt="" class="w-100"></div>
@@ -169,20 +181,71 @@
 		
 	<!-- Start Two Column Section -->
 
+	<!-- Emmet Abreviation ".container.my-5>.row.py-4" -->
+	<div class="container my-5">
+		<div class="row py-4">
+			<!-- .col-lg.4mb-4.my-lg-auto>h1 -->
+			<div class="col-lg-4 mb-4 my-lg-auto">
+				<h1 class="text-dark font-weight-bold mb-3">We've been expecting you</h1>
+				<!-- ""p.mb-4" paragraph with margin border-->
+				<p class="mb-4">At our core is a collection of design and development solutions that will blow your mind!</p>
+
+				<!-- "a.btn.btn-outline-dark.btn-lg" anchor, button, dark theme-->
+				<a href="https://overquest.com" target="_blank" class="btn btn-outline-dark btn-lg">The recycle theme</a>
+			</div>
+			<!-- ".col-lg-8>img.w-100" -->
+			<div class="col-lg-8"><img src="img/code.jpg" alt="" class="w-100"></div>
+		</div>
+	</div>
+
 	<!-- End Two Column Section -->
 
 
 	<!-- Start Jumbotron -->
+	<!-- ".jumbotron.py-5.mb-0>.container>.row" bootstrap jumbotron class-->
+	<div class="jumbotron py-5 mb-0">
+		<div class="container">
+			<div class="row">
+				<!-- ".col-md-7.col-lg-8..col-xl-9.my-auto" adding column breakpoints/transitions to occupy additional columns -->
+				<div class="col-md-7 col-lg-8 col-xl-9 my-auto">
+					<h4>Looking for quality web development and design services?</h4>
+				</div>
+				<!-- "".col-md-5.col-lg-4.col-xl-3" these columns add up to 12 width, see above columns in same row-->
+				<div class="col-md-5 col-lg-4 col-xl-3 pt-4 pt-md-0">
+					<a href="#" class="btn btn-primary btn-lg">Contact us today</a>
+				</div>
+
+			</div>
+		</div>
+	</div>
 
 	<!-- End Jumbotron -->
 
 
 	<!-- Start Footer -->
+	
 
+		<footer>
+		<!-- .container>.row.text-light-center.py-4.justify-content-center -->
+		<div class="container">
+			<div class="row text-light-center py-4 justify-content-center">
+			<!-- .col.sm-10.col-md-8.col-lg-6>img -->
+				<div class="col sm-10 col-md-8 col-lg-6"><img src="img/logo-white.png" alt="">
+				<p>At our core is a collection of design and development solutions that represent everything your business needs to compete in the modern marketplace.</p>
+				<!-- "ul.social.pt-3>li*4>a>i.fab.fa-" social media not used -->
+				</div>
+			</div>
+		</div>
+		</footer>
 	<!-- End Footer -->
 
 
 	<!-- Start Socket -->
+	<!-- .socket.text-light.text-center.py-3 -->
+		<div class="socket text-light text-center py-3">
+			<p>&copy; <a href="https://w3newbie.com" target="_blank">w3newbie.com</a></p>
+
+		</div>
 
 	<!-- End Socket -->
 
